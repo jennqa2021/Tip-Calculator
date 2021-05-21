@@ -4,13 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-
+    
     <title>Tip Calculator by Jenn</title>
   </head>
   <body>
-    <h1>Tip Calculator</h1>
-
+    <div class="card">
+      <header>
+        <h1>Tip Calculator</h1>
+      </header>
+      <label for="billAmount">Bill Amount</label>
+      <input type="text" id="billAmount" placeholder="$"/>
+      <button id="btn15">15%</button>
+      <button id="btn175">17.5%</button>
+      <button id="btn20">20%</button>
+      <input type="text" placeholder="Custom Tip Amount %" id="customTip" />
+      <button id="btncalculate">Calculate</button>
+      <h4>Result</h4>
+      <p>Tip Amount: <output id="tipAmount"></output> <br /></p>
+      <p>Total:<output id="total"></output></p>
+      <footer>
+        Coded for you by
+        <span class="signature"> 
+           
+            <a href="https://www.linkedin.com/in/jennifer-lumley-sqa-engineer/" target="_blank" class="signature">Jennifer Lumley           
+          </span>
+      </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
